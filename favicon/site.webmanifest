@@ -1,6 +1,7 @@
 {
   "name": "Dadditos Painting LLC",
   "short_name": "Dadditos",
+  "description": "Interior and exterior painting in Palm Beach, Port St. Lucie, and Fort Lauderdale.",
   "icons": [
     {
       "src": "/favicon/android-chrome-192x192.png",
@@ -15,5 +16,6 @@
   ],
   "theme_color": "#F46801",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/"
 }

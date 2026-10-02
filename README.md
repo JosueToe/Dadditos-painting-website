@@ -25,6 +25,17 @@ npx serve .
    - **Publish directory:** `.` (or use `netlify.toml`, already set)
 4. Deploy.
 
+## SEO notes
+
+Meta tags, Open Graph, Twitter cards, JSON-LD business schema, `robots.txt`, and `sitemap.xml` are included.
+
+After you connect a custom domain on Netlify, update every `https://dadditospainting.com` URL in:
+- page `<link rel="canonical">` / Open Graph tags
+- [`sitemap.xml`](sitemap.xml)
+- JSON-LD blocks in the HTML `<head>`
+
+Then submit the sitemap in [Google Search Console](https://search.google.com/search-console).
+
 ## Brand & contact
 
 | Item | Value |

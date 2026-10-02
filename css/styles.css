@@ -19,12 +19,42 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 1000;
+  background: var(--orange);
+  color: var(--white);
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Hide Netlify Drop / branding badge if injected */
+a[href*="netlify.com"][style*="position: fixed"],
+a[href*="www.netlify.com"][target="_blank"][rel="noopener"][style*="bottom"],
+body > a[href*="netlify.com"]:last-of-type {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 html {
